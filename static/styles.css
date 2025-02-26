@@ -1,0 +1,92 @@
+/* styles.css */
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light gray background for contrast */
+    color: #333; /* Dark gray text color */
+    line-height: 1.6; /* Improved readability */
+    padding: 20px; /* Padding around the body */
+}
+
+/* Centering the main header */
+h1 {
+    text-align: center; /* Centered header */
+    margin-bottom: 20px; /* Space below the header */
+    color: #007ACC; /* Blue color for the header */
+}
+
+/* Styling the form */
+.white_box {
+    max-width: 600px; /* Limit form width */
+    margin: 0 auto; /* Center the form */
+    background: white; /* White background for the form */
+    padding: 20px; /* Padding inside the form */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+#title{
+    color: #218838;
+}
+/* Label styling */
+label {
+    display: block; /* Make label a block element */
+    margin-bottom: 10px; /* Space below the label */
+    font-weight: bold; /* Bold text for emphasis */
+}
+
+/* Input field styling */
+input[type="url"] {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding inside the input */
+    margin-top: 15px;
+    margin-bottom: 15px; /* Space below the input */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+}
+
+/* Button styling */
+button {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding */
+    background-color: #28a745; /* Green button */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Styling for the output messages */
+h3 {
+    color: black; /* Red text color */
+    text-align: center; /* Center the text */
+    margin-top: 20px; /* Space above the output */
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    body {
+        padding: 10px; /* Less padding on smaller screens */
+    }
+
+    h1 {
+        font-size: 1.5em; /* Smaller font size */
+    }
+
+    input[type="url"], button {
+        font-size: 14px; /* Smaller font size */
+    }
+}

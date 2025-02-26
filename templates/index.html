@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube URL Collector</title>
+    <link rel="stylesheet" href="../static/styles.css"> <!-- Link to the CSS file -->
+</head>
+<body>
+    <h1>Enter YouTube Video URL</h1>
+    <form class = "white_box" id="youtubeForm" action="{{url_for('summary')}}" method="post">
+        <label for="videoUrl">YouTube URL:</label>
+        <input type="url" id="videoUrl" name="videoUrl" placeholder="https://www.youtube.com/watch?v=example" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    <h3 class="white_box" id = "title" color: red; >{{url}}</h3>
+    <h3 class= "white_box" color: red;>{{summary}}</h3>
+
+</body>
+</html>
